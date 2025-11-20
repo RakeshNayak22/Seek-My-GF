@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💘 Find Your Love 💘</h1>
+    <p class="subtitle">You have 5 chances to find her!</p>
+    
+    <div class="game-stats">
+      <div class="stat-item">
+        <span class="stat-label">Attempts Left:</span>
+        <span class="stat-value" id="attemptsLeft">5</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Score:</span>
+        <span class="stat-value" id="score">0</span>
+      </div>
+    </div>
+    
+    <div class="game-area">
+      <!-- Boy Character -->
+      <div class="character-section">
+        <div class="character-container">
+         <img src="boy2.jpg" alt="Boy Avatar" class="character-img" id="characterImg">
+
+        </div>
+        <div class="emotion-text" id="emotionText">Click any tile!</div>
+      </div>
+
+      <!-- Game Grid -->
+      <div class="grid-section">
+        <div class="direction-hint" id="directionHint"></div>
+        <div class="grid" id="gameGrid"></div>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <h3>How to Play:</h3>
+      <ul>
+        <li>Click tiles to find your love</li>
+        <li>Watch his reactions to know if you're close</li>
+        <li>Follow the arrow after your first click</li>
+        <li>Find her in 5 attempts!</li>
+      </ul>
+    </div>
+  </div>
+    <div class="modal" id="gameModal">
+    <div class="modal-content">
+      <div id="modalImageContainer"></div>
+      <div class="modal-icon" id="modalIcon">💖</div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalMessage"></p>
+      <div class="modal-stats" id="modalStats"></div>
+      <button class="btn-primary" onclick="resetGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
